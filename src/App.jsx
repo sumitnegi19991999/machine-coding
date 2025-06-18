@@ -10,6 +10,7 @@ import HolyGrail from "./components/HolyGrail";
 import Tabs from "./components/Tabs";
 import Accordian from "./components/Accordian";
 import Carousel from "./components/Carousel";
+import Pagination from "./components/Pagination";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +41,10 @@ function App() {
         {
           path: "carousel",
           element: <Carousel />,
+        },
+        {
+          path: "pagination",
+          element: <Pagination />,
         },
       ],
     },
