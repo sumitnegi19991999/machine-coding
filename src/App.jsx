@@ -12,6 +12,7 @@ import Accordian from "./components/Accordian";
 import Carousel from "./components/Carousel";
 import Pagination from "./components/Pagination";
 import TruncatePagination from "./components/TruncatePagination";
+import InfiniteScroll from "./components/infiniteScroll";
 
 function App() {
   const router = createBrowserRouter([
@@ -50,6 +51,10 @@ function App() {
         {
           path: "truncated-pagination",
           element: <TruncatePagination />,
+        },
+        {
+          path: "infinite-scroll",
+          element: <InfiniteScroll />,
         },
       ],
     },
