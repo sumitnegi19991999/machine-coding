@@ -11,6 +11,7 @@ import Tabs from "./components/Tabs";
 import Accordian from "./components/Accordian";
 import Carousel from "./components/Carousel";
 import Pagination from "./components/Pagination";
+import TruncatePagination from "./components/TruncatePagination";
 
 function App() {
   const router = createBrowserRouter([
@@ -45,6 +46,10 @@ function App() {
         {
           path: "pagination",
           element: <Pagination />,
+        },
+        {
+          path: "truncated-pagination",
+          element: <TruncatePagination />,
         },
       ],
     },
